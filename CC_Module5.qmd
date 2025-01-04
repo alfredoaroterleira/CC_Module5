@@ -1,0 +1,68 @@
+---
+title: "CC_Module5"
+author: "Alfredo Aro Terleira"
+format: 
+  html: 
+    self-contained: true
+editor: visual
+---
+
+## Introduction to Shiny
+
+Shiny is a package that allows you to build interactive web applications with th R programming language.
+
+The applications created with `Shiny` can be manipulated and shared online
+
+```{r}
+library(shiny)
+```
+
+In order to open Shiny, you:
+
+1.  First, need to click on 'RStudio IDE' on the the Data Scientist Workbench. This will open RStudio.
+
+![](1.png)
+
+2.  Then, we will need to create a new project. To do so, click on 'File', and then in the dropdown, click on 'New Project'
+
+![](2.png)
+
+3.  Click on 'New Directory' to create a new directory for your application.
+
+![](3.png)
+
+4.  Select 'Shiny Web Application' as the project type
+
+![](4.png)
+
+5.  Then, you can choose a unique name for the new directory. We will use the name 'myapp'
+
+![](5.png)
+
+6.  When you create a project, you will get 2 R files by default: ui.R, and server.R
+
+![](6.png)
+
+-   ui.R: is the user interface script. It's used to create the layout and appearance of the app, including the graphs, slider bars and text boxes.
+
+-   server.R: contains instructions for building your output object.
+
+The inputs come from ui.R, so when you update the input in ui.R, the output in server.R will be automatically updated.
+
+In each separate project you create, you should run the 'library' function at the beginning of booth the ui.,R and server.R sessions.
+
+7.  When you click 'Run App' you will see a drop down menu with three options
+
+-   The default 'Run in Window' option will open a new window to run the app. You may need to disable pop-up blocking software for this method.
+
+-   The 'Run in Viewer Pane' option will show the app in the fourth window under the 'viewer tab'
+
+-   The 'run external' option will open a new tab for the application
+
+Before you run the app, you need to make sure that the previous app has stooped
+
+![](7.png)
+
+8.  To do so, simply click on the 'stop' button
+
+![](8.png)
